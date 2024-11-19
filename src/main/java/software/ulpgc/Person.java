@@ -26,4 +26,13 @@ public class Person {
     private int toYears(long days) {
         return (int) (days/365);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", birthday=" + birthday +
+                ", age=" + getAge() +
+                '}';
+    }
 }
